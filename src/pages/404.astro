@@ -1,5 +1,5 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Global from "../layouts/Global.astro";
 import CommonHead from "../components/CommonHead.astro";
 import Badges from "../components/Badges.astro";
 ---
@@ -12,10 +12,10 @@ import Badges from "../components/Badges.astro";
 
 <body>
     <main>
-        <Layout>
-            <header>
-                <h1 class="large special"> 404 Page Not Found </h1>
-            </header>
+        <Global>
+        <header>
+            <h1 class="large special">404 Page Not Found</h1>
+        </header>
 
             <p class="center">
                 Hey, you're not supposed to be here.
@@ -23,7 +23,7 @@ import Badges from "../components/Badges.astro";
             <p class="center">
                 Click on a link and get somewhere safe.
             </p>
-        </Layout>
+        </Global>
         <Badges/>
     </main>
 </body>

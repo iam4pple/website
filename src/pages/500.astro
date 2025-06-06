@@ -1,5 +1,5 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Global from "../layouts/Global.astro";
 import CommonHead from "../components/CommonHead.astro";
 import Badges from "../components/Badges.astro";
 ---
@@ -12,7 +12,7 @@ import Badges from "../components/Badges.astro";
 
 <body>
     <main>
-        <Layout>
+        <Global>
             <header>
                 <h1 class="large special">500 Internal Server Error</h1>
             </header>
@@ -23,7 +23,7 @@ import Badges from "../components/Badges.astro";
             <p class="center">
                 If you can't, try again later or <a href="mailto:4pple@iam4pple.com">contact me</a>.
             </p>
-        </Layout>
+        </Global>
         <Badges/>
     </main>
 </body>

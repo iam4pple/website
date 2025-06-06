@@ -1,6 +1,6 @@
 ---
 import CommonHead from '../components/CommonHead.astro';
-import Layout from '../layouts/Layout.astro';
+import Global from '../layouts/Global.astro';
 import Badges from '../components/Badges.astro';
 ---
 
@@ -14,9 +14,10 @@ import Badges from '../components/Badges.astro';
 <body>
 
     <main>
-		<Layout>
+		<Global>
+
         <header>
-            <h1 class="large special"> iam4pple </h1>
+            <h1 class="large special">iam4pple</h1>
         </header>
 
         <p>Welcome! I am 4pple and welcome to my website. 
@@ -54,7 +55,7 @@ import Badges from '../components/Badges.astro';
         </div>
 
         <Badges />
-		</Layout>
+    </Global>
     </main>
 
 </body>
