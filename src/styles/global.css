@@ -128,8 +128,8 @@ button:disabled {
 
 p {
   text-align: left;
-  padding-left: 250px;
-  padding-right: 250px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .myLinks {
