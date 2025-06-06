@@ -1,6 +1,7 @@
 ---
 import CommonHead from '../components/CommonHead.astro';
 import Layout from '../layouts/Layout.astro';
+import Badges from '../components/Badges.astro';
 ---
 
 <!DOCTYPE html>
@@ -12,7 +13,7 @@ import Layout from '../layouts/Layout.astro';
 
 <body>
 
-    <main transition:animate="slide">
+    <main>
 		<Layout>
         <header>
             <h1 class="large special"> iam4pple </h1>
@@ -52,17 +53,8 @@ import Layout from '../layouts/Layout.astro';
 
         </div>
 
-            <div class="container">
-                <div class="badges">
-                    <!--games and software-->
-                    <a href="https://store.steampowered.com/"><img src="/buttons/steam.gif" alt="Play with STEAM" class="button"></a>
-                    <a href="https://minecraft.net/"><img src="/buttons/minecraft.gif" alt="Minecraft" class="button"></a>
-                    <a href="https://www.blender.org/"><img src="/buttons/blender.gif" alt="Blender" class="button"></a>
-                    <a href="https://bsky.app/"><img src="/buttons/bluesky.gif" alt="Bluesky" class="button"></a>
-                </div>
-
-            </div>
-			</Layout>
+        <Badges />
+		</Layout>
     </main>
 
 </body>
