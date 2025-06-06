@@ -101,13 +101,13 @@ button:disabled {
 .menuBar {
   list-style-type: none;
   margin: -16px;
-  margin-bottom: 20px;
+  margin-bottom: 2%;
   padding: 0;
   background-color: var(--bglight)
 }
 
 .menuLinks {
-  float: left;
+   float: left;
 }
 
 .menuLinks a {
@@ -119,10 +119,6 @@ button:disabled {
 }
 
 .menuLinks a:hover {
-  background-color: var(--red);
-}
-
-.active {
   background-color: var(--red);
 }
 

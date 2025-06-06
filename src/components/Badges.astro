@@ -1,10 +1,18 @@
+---
+import { Image } from 'astro:assets';
+import Steam from "../assets/buttons/steam.gif"
+import Minecraft from "../assets/buttons/minecraft.gif"
+import Blender from "../assets/buttons/blender.gif"
+import Bluesky from "../assets/buttons/bluesky.gif"
+---
+
 <div class="container">
     <div class="badges">
         <!--games and software-->
-        <a href="https://store.steampowered.com/"><img src="/buttons/steam.gif" alt="Play with STEAM" class="button"></a>
-        <a href="https://minecraft.net/"><img src="/buttons/minecraft.gif" alt="Minecraft" class="button"></a>
-        <a href="https://www.blender.org/"><img src="/buttons/blender.gif" alt="Blender" class="button"></a>
-        <a href="https://bsky.app/"><img src="/buttons/bluesky.gif" alt="Bluesky" class="button"></a>
+        <a href="https://store.steampowered.com/"><Image src={Steam} alt="Play with STEAM" class="button" loading="eager"></a>
+        <a href="https://minecraft.net/"><Image src={Minecraft} alt="Minecraft" class="button" loading="eager"></a>
+        <a href="https://www.blender.org/"><Image src={Blender} alt="Blender" class="button" loading="eager"></a>
+        <a href="https://bsky.app/"><Image src={Bluesky} alt="Bluesky" class="button" loading="eager"></a>
     </div>
 
 </div>

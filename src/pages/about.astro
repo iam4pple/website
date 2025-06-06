@@ -21,7 +21,14 @@ import Badges from "../components/Badges.astro";
             <h1 class="large special">About Me</h1>
         </header>
 
-        <Image src={me} alt={"A selfie of a male with an enhanced jawline due to a Snapchat filter. The male is in a school bus."} class="center"/>
+        <Image 
+            src={me} 
+            alt={"A selfie of a male with an enhanced jawline due to a Snapchat filter. The male is in a school bus."} 
+            class="center"
+            loading="eager"
+            width={me.width / 2}
+            densities={[1.5, 2]}
+        />
 
         <p>
             Hello, I am 4pple (as you already know)! 
