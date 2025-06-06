@@ -1,0 +1,165 @@
+body,
+html {
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100%
+}
+body {
+  background-color:var(--bg);
+  color:var(--fg);
+  font-family:var(--font);
+  font-size:var(--font-size);
+  --font-size: 1rem;
+  --padding: 1rem;
+  --bgdarker: #000000;
+  --bgdark: #0a0a0a;
+  --bg: #111111;
+  --bglight: #444444;
+  --fg: #ffffff;
+  --fgdark: #c0c0c0;
+  --red: #cb2027;
+  --blue: #00c0ff;
+  --orange: #ff8c00;
+  --green: #00ff00;
+  --purple: #ff00ff;
+  --darkred: #800000;
+  --darkorange: #d2691e;
+  --darkblue: #004080;
+  --lightgray: #808080;
+  --darkgray: #404040;
+  --font: "Inconsolata", monospace;
+  --size: 35rem;
+  --shadow: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+}
+main {
+  padding:var(--padding);
+  width:calc(100% - var(--padding) * 2);
+  filter:var(--shadow);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  text-align:left;
+  overflow-wrap:break-word;
+  font-size:var(--font-size)
+}
+h3 {
+  text-align: center;
+  padding: 5px;
+  margin: 0px;
+}
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center
+}
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5px;
+  background-color: var(--bglight);
+}
+
+.badges a {
+  background-color: var(--bglight);
+}
+
+a {
+  color: var(--fg);
+}
+
+.button {
+  image-rendering: pixelated;
+  border-radius: 0!important;
+  margin: 0!important
+}
+
+button {
+  background-color: var(--bgdarker);
+  border: 0px;
+  border-radius: 0px;
+  color: var(--fg);
+  cursor: pointer;
+  font-family: var(--font)
+}
+button:disabled {
+  cursor: not-allowed;
+  color: var(--fgdark)
+}
+
+.large {
+  font-size: 3rem;
+  margin: 0
+}
+
+.special {
+  color: var(--lightgray);
+  text-align: center;
+}
+
+.menuBar {
+  list-style-type: none;
+  margin: -16px;
+  margin-bottom: 20px;
+  padding: 0;
+  background-color: var(--bglight)
+}
+
+.menuLinks {
+  float: left;
+}
+
+.menuLinks a {
+  display: block;
+  color: var(--fg);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menuLinks a:hover {
+  background-color: var(--red);
+}
+
+.active {
+  background-color: var(--red);
+}
+
+p {
+  text-align: left;
+  padding-left: 250px;
+  padding-right: 250px;
+}
+
+.myLinks {
+  align-content: center;
+  justify-content: center;
+  text-align: justify;
+  list-style-position: inside;
+}
+
+.myLinks li {
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25vw; 
+  justify-items: center;
+}
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  display: block;
+  color: var(--fg);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}

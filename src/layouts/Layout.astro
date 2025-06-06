@@ -1,0 +1,44 @@
+---
+import '../styles/global.css';
+---
+
+<!DOCTYPE html>
+<html transition:animate="none">
+
+<body>
+
+    <main>
+
+        <ul class="menuBar" transition:name="menubar" transition:animate="slide">
+            <li class="menuLinks">
+                <a href="./">Home</a>
+            </li>
+            <li class="menuLinks">
+                <a href="./about">About</a>
+            </li>
+            <li class="menuLinks">
+                <a href="https://jellyfin.iam4pple.com">Jellyfin</a>
+            </li>
+            <li class="menuLinks">
+                <a href="https://map.iam4pple.com">BlueMap</a>
+            </li>
+            <li class="menuLinks">
+                <a href="https://zipline.iam4pple.com">Zipline</a>
+            </li>
+            <li class="menuLinks">
+                <a href="https://auth.iam4pple.com">authentik</a>
+            </li>
+            <li class="menuLinks">
+                <a href="https://goon.iam4pple.com">Wiki</a>
+            </li>
+            <li class="menuLinks disabled">
+                OnlyFans
+            </li>
+        </ul>
+
+        <slot />
+    </main>
+
+</body>
+</html>
+
