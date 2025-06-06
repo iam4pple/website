@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/Layout.astro";
+import CommonHead from "../components/CommonHead.astro";
+import Badges from "../components/Badges.astro";
+---
+
+<!DOCTYPE html>
+
+<head>
+    <CommonHead title="404"/>
+</head>
+
+<body>
+    <main>
+        <Layout>
+            <header>
+                <h1 class="large special"> 404 Page Not Found </h1>
+            </header>
+
+            <p class="center">
+                Hey, you're not supposed to be here.
+            </p>
+            <p class="center">
+                Click on a link and get somewhere safe.
+            </p>
+        </Layout>
+        <Badges/>
+    </main>
+</body>

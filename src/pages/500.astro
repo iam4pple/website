@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/Layout.astro";
+import CommonHead from "../components/CommonHead.astro";
+import Badges from "../components/Badges.astro";
+---
+
+<!DOCTYPE html>
+
+<head>
+    <CommonHead title="500"/>
+</head>
+
+<body>
+    <main>
+        <Layout>
+            <header>
+                <h1 class="large special">500 Internal Server Error</h1>
+            </header>
+
+            <p class="center">
+                Uh oh, something's gone wrong. Click on a link and try to get somewhere safe.
+            </p>
+            <p class="center">
+                If you can't, try again later or <a href="mailto:4pple@iam4pple.com">contact me</a>.
+            </p>
+        </Layout>
+        <Badges/>
+    </main>
+</body>
