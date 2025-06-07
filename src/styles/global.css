@@ -58,12 +58,7 @@ h3 {
   flex-wrap: wrap;
   justify-content: left;
   padding: 5px;
-  background-color: var(--bglight);
   max-width: calc(var(--size) - var(--padding) * 2);
-}
-
-.badges a {
-  background-color: var(--bglight);
 }
 
 a {
