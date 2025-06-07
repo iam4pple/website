@@ -59,7 +59,7 @@ h3 {
   justify-content: left;
   padding: 5px;
   background-color: var(--bglight);
-  max-width: 41%;
+  max-width: calc(var(--size) - var(--padding) * 2);
 }
 
 .badges a {
@@ -104,7 +104,8 @@ button:disabled {
   margin: -16px;
   margin-bottom: 2%;
   padding: 0;
-  background-color: var(--bglight)
+  background-color: var(--bglight);
+  min-height: 1.5rem;
 }
 
 .menuLinks {
@@ -124,9 +125,9 @@ button:disabled {
 }
 
 p {
-  text-align: left;
-  padding-left: 5%;
-  padding-right: 5%;
+  display: inline;
+  justify-content:end;
+  max-width: calc(var(--size) - var(--padding) * 2);
 }
 
 .myLinks {
@@ -158,4 +159,15 @@ p {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+.info {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.info a {
+  display: inline;
 }
