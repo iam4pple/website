@@ -1,6 +1,5 @@
 ---
 import '../styles/global.css';
-const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -10,9 +9,9 @@ const { title } = Astro.props;
 
     <main>
 
-        <ul class="menuBar">
+        <ul class="menuBar" transition:persist>
             <li class="menuLinks">
-                <a href="/index" data-astro-prefetch>Home</a>
+                <a href="/" data-astro-prefetch>Home</a>
             </li>
             <li class="menuLinks">
                 <a href="/about" data-astro-prefetch>About</a>
@@ -39,6 +38,8 @@ const { title } = Astro.props;
         
         <slot />
     </main>
+
+    
 
 </body>
 </html>

@@ -41,7 +41,7 @@ main {
   justify-content:center;
   text-align:left;
   overflow-wrap:break-word;
-  font-size:var(--font-size)
+  font-size:var(--font-size);
 }
 h3 {
   text-align: center;
@@ -51,14 +51,15 @@ h3 {
 .container {
   display: flex;
   width: 100%;
-  justify-content: center
+  justify-content: center;
 }
 .badges {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
   padding: 5px;
   background-color: var(--bglight);
+  max-width: 41%;
 }
 
 .badges a {
