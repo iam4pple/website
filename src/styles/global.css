@@ -56,7 +56,7 @@ h3 {
 .badges {
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: center;
   padding: 5px;
   max-width: calc(var(--size) - var(--padding) * 2);
 }
